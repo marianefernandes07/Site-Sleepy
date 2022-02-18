@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* configs gerais*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;  
+    color: black;
+    font-family: var(--fonte-destaque);
+}
+
+img{ 
+    width: 100%;
+}
+
+:root {
+    --cor1: #ffffff;
+    --cor2: #8080803f;
+    --cor3: #808080;
+    --cor4: #3f3f3f;
+    --cor5: #000000;
+    --fonte-padrao: 'Oswald';
+    --fonte-destaque: 'Bebas Neue', 'oswald';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    height: 10vh;
+    font-size: 2em;
+    text-align: center;  
+    padding: 10px; 
+    
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 5px 15px;
+    margin: 10px 30px; 
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+}
+
+nav a:hover{
+    text-decoration: overline;
+    transform: scale(1.1);
+}
+
+nav a:active {
+    text-decoration: underline;
+}
+
+main {
+    width: 50vw;
+    margin: 30px auto;
+}
+
+main h1 {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 5px dotted black;
+}
+
+main p {
+    padding: 20px;
+    font-family: 'Oswald';
+    font-weight: 300;
+    line-height: 30px;
+    text-align: justify;    
+}
+
+div#carrossel img {
+    max-height: 81.5vh;
+    object-fit: cover;
+    object-position: 100%;
+}
+
+main#galeria {
+    width: 60vw;
+}
+
+main#sobre {
+    padding-bottom: 40vh;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+section#galeria {
+    margin: 3vh auto;
+    columns: 3;
+    /*background-color: orangered;*/
+}
+
+section.galeria div {
+    padding: 10px;
+    margin: 10px ;
+    display: inline-block;
+}
+
+section div img {
+    min-width: 5vw;
+    max-width: 30vh;
+    min-height: 5vw;
+    max-height: 30vh;
+    object-fit: cover;
+    object-position: 100%;
+    border: 0.3vw solid rgb(255, 247, 233);
+    transition: all 0.5s;
+    
+}
+
+section div img:hover {
+    transform: scale(1.05);
+}
+
+#banner {
+    height: 82.5vh;
+    overflow: hidden;
+}
+
+main#contato p {
+    text-align: center;
+}
+
+form {
+    margin: 15px;
+    padding: 2vh;
+    font-size: large;
+    border: 3px solid black;
+}
+
+label{
+    display: block;
+    padding: 1vh;
+}
+
+input{
+    display: block;
+    margin: 0.5vw;   
+    width: 100%; 
+    font-family: var(--fonte-padrao);
+    width: 600px;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+}
+
+#enviar{
+    padding: 5px;
+    margin: 30px auto;
+    display: block;
+    background-color: white;
+    text-decoration: overline;
+    transition: all 0.5s ease;
+    font-family: var(--fonte-destaque);
+    font-size: x-large;
+}
+
+#enviar:hover {
+    transform: scale(1.1); 
+}
+
+#enviar:active{
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--cor5);
+    padding: 2vh;
+    height: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 0;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin-bottom: 1vh
+}
+footer div {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    
+}
+
+footer img {
+    padding: 10px;
+    width: 2vw;
+    transition: all 0.5s ease;
+}
+
+footer a:hover {
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 320px) and (max-device-width: 320px){
+ #carrossel
+ {
+    position: absolute;
+    top: 30%;
+    left: -30vw;
+    width: 300vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
